@@ -26,11 +26,11 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use("/api/v1", tempRouter)
 
-console.log(process.env.DB_URI)
+// console.log(process.env.DB_URI)
 // console.log(path.resolve(__dirname, "../view/dist/index.html"))
-app.use(express.static(path.join(__dirname, "./view/dist")))
+app.use(express.static(path.join(__dirname, "./server/view")))
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./view/dist/index.html"))
+  res.sendFile(path.resolve(__dirname, "./server/view/index.html"))
 })
 
 app.listen(PORT, () => {
