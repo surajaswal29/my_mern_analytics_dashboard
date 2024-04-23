@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg_image {
+  background-image: url("https://res.cloudinary.com/dzfc0ty7q/image/upload/v1713860446/green-app/bg-3_cxq8px.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c0c6cd; /* Color of the scroll handle */
+  border-radius: 4px; /* Roundness of the scroll handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c9cfd6; /* Color of the scroll handle on hover */
+}
+
+.MuiPaginationItem-root {
+  color: #818cf8 !important;
+}
+.MuiPaginationItem-root.Mui-selected {
+  background-color: #c7d2fe !important;
+  color: #6366f1 !important;
+}
+.MuiPaginationItem-root:hover {
+  background-color: #c7d2fe !important;
+}
+.MuiPaginationItem-icon {
+  color: #6366f1 !important;
+}
+
+.nav_link_style {
+  @apply my-2 px-6 py-3 font-medium hover:bg-[#4d4855df] hover:text-white flex gap-2 items-center;
+}
+
+.top_filter_all{
+  @apply cursor-pointer rounded-md whitespace-nowrap w-full md:w-auto md:min-w-[200px] flex items-center gap-2 overflow-hidden border border-purple-400
+}
+.top_filter_light{
+  @apply bg-white text-black
+}
+.top_filter_dark{
+  @apply bg-slate-600 text-white
+}

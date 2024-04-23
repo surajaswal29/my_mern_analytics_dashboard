@@ -1,0 +1,13 @@
+.navbar_container_1 {
+  @apply w-7/12 md:w-full flex items-center  md:flex-row justify-end  gap-6 md:gap-8 px-2 md:px-3;
+}
+
+.search_bar_1 {
+  @apply w-[370px] relative hidden md:flex;
+}
+.search_bar_input {
+  @apply w-full focus:outline-none h-10 text-gray-700 px-4 rounded-full text-sm placeholder:text-gray-400 shadow-sm;
+}
+.nav_bar_links_1 {
+  @apply flex gap-5 items-center md:flex-row;
+}
